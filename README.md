@@ -37,7 +37,7 @@ not, this gem does nothing._ If so, however, this method:
 - Adds `<meta name="referrer" content="origin" />` to try to [prevent future requests from sending the URL via the
 Referer header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy).
   - Use the `referrer_content:` method argument to specify a value other than "origin"
-- Adds `<link rel="canonical" href="https://example.com/email_confirmation_token=[FILTERED]" />`, which some js
+- Adds `<link rel="canonical" href="https://example.com/email_confirmation?token=[FILTERED]" />`, which some js
 analytics libs may use instead of `location.href`.
   - By default, the `href` value used will be: `request.base_url + request.filtered_path`
   - Use the `canonical_href:` method argument to specify a value other than the default.
