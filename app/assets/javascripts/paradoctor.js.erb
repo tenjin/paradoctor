@@ -1,0 +1,11 @@
+// The use of this code assumes the presence of a <link rel="canonical" href="..."> tag
+(() => {
+  // Replace address bar URL with "canonical" URL
+  let tags = document.getElementsByTagName('link');
+  for (let i = 0; tag = tags[i]; i++) {
+    if ('canonical' == tag.getAttribute('rel')) {
+      history.replaceState(history.state, '', tag.getAttribute('href'));
+      break;
+    }
+  }
+})();
