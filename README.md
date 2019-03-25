@@ -8,7 +8,7 @@ Rails gem to "doctor" your URL parameters for endpoints requiring sensitive data
 The goal is to prevent 3rd party js libs from sending this sensitive information to their servers, whereby a hacked
 account in their system could lead to user impersonation in your system.
 
-![paradoctorsIRL](https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiymvKpiZzhAhVr5IMKHUp4A20QjRx6BAgBEAU&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FUnited_States_Air_Force_Pararescue&psig=AOvVaw2SmpieyaPfHzwJqJcskuSe&ust=1553561352114825)
+![paradoctorsIRL](https://en.wikipedia.org/wiki/United_States_Air_Force_Pararescue#/media/File:United_States_Air_Force_Pararescue_Emblem.svg)
 
 ## Installation
 Add this line to your application's Gemfile:
