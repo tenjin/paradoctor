@@ -39,8 +39,8 @@ Referer header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referr
   - Use the `referrer_content:` method argument to specify a value other than "origin"
 - Adds `<link rel="canonical" href="https://example.com/email_confirmation_token=[FILTERED]" />`, which some js
 analytics libs may use instead of `location.href`.
-  - Use the `canonical_href:` method argument to specify a value other than the default, which is:
-`request.base_url + request.filtered_path`
+  - By default, the `href` value used will be: `request.base_url + request.filtered_path`
+  - Use the `canonical_href:` method argument to specify a value other than the default.
 - Invokes javascript to replace the URL in the user's address bar via `history#replaceState`
   - **NOTE: This will break page reloads.**
   - This will actually update `location.href` which should prevent 3rd party js libs from sending the original URL
