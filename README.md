@@ -10,6 +10,12 @@ account in their system could lead to user impersonation in your system.
 
 ![paradoctorsIRL](https://upload.wikimedia.org/wikipedia/commons/3/38/USAF_Pararescue_Flash.jpg)
 
+## Important Note
+
+While this gem could certainly be used as a fail-safe, a better approach to accomplish the goal is outlined here: https://thoughtbot.com/blog/is-your-site-leaking-password-reset-links
+
+Basically, use a session + a 302 redirect to move the sensitive data out of the URL before javascript can access it.
+
 ## Installation
 Add this line to your application's Gemfile:
 
