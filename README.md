@@ -50,7 +50,7 @@ elsewhere.
 Finally, you can bypass the filtered params conditional by passing `force: true` to enact all of the above behaviors.
 
 ## Contributing
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/paradoctor.
+Bug reports and pull requests are welcome on GitHub at https://github.com/tenjin/paradoctor.
 
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
